@@ -1,0 +1,189 @@
+body {
+    background-color: #fff5e6;
+    color: #2b2b2b;
+    display: grid;
+    grid-template-rows: auto auto 730px auto auto;
+    font-family: "Electrolize", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #ff8c00;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+header img {
+    width: 40px;
+}
+
+nav {
+    background-color: #ff8c00;
+    width: 100%;
+    padding: 10px 0;
+}
+
+nav div.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 100%;
+}
+
+nav div.menu div.menus a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #ff8c00;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+nav div.menu div.menus a:hover {
+    background-color: #e67300;
+    font-weight: bold;
+}
+
+h1.Titulo {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 60px;
+}
+
+div.banner {
+    grid-row: 3/4;
+}
+
+div.banner img {
+    width: 100%;
+}
+
+main {
+    grid-row: 4/5;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin-left: 40px;
+    text-align: center;
+}
+
+main.futbol11,
+main.baloncesto {
+    grid-row: 4/5;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-left: 40px;
+}
+
+.main1contenedor, .main2contenedor, .main3contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.img img {
+    width: 60%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.img {
+    border: 1px solid #cc5200;
+    border-radius: 15px;
+    margin-right: 40px;
+    overflow: hidden;
+}
+
+.img:hover {
+    box-shadow: 3px 3px 5px 5px rgba(204, 82, 0, 0.3);
+}
+
+.img img:hover {
+    transform: scale(0.92, 0.95);
+}
+
+.futbolsala1 { margin-top: 96px; }
+.molten { margin-top: 25px; }
+.camibeisbol { margin-top: 25px; margin-bottom: 25px; }
+.camiseta { margin-top: 10px; margin-bottom: 5px; }
+.beisbol1, .balon1, .guantes1 { margin-top: 20px; }
+
+.main1, .main2, .main3 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+footer {
+    grid-row: 5/6;
+    margin: 0 30px 80px 30px;
+    background-color:  #f5ede0;
+    color: #fff5e6;
+    padding: 20px;
+}
+
+footer img.flecha1 {
+    float: right;
+}
+
+footer div.info,
+footer div.redes {
+    display: flex;
+    flex-direction: column;
+    width: 24px;
+    height: 24px;
+    gap: 10px;
+}
+
+footer div.redes {
+    margin-left: 300px;
+}
+
+footer img.pagos {
+    width: 40%;
+    padding-left: 515px;
+}
+
+span {
+    color: #ff8c00;
+}
+
+@media screen and (max-width: 768px) {
+    .main1contenedor,
+    .main2contenedor {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .menu > div {
+        flex: 1 1 45%;
+        text-align: center;
+    }
+
+    .menu a {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main1contenedor,
+    .main2contenedor {
+        grid-template-columns: 1fr;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+}
